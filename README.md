@@ -121,8 +121,12 @@ http://docs.recurly.com/api/subscriptions
 **NOTE Certain uses of this method will have implications on PCI compliance because this
 function requires access to and transmission of customer credit card information.
 
-	recurly.subscriptions.create(accountcode, details, callback) 
+	recurly.subscriptions.create(accountcode, details, callback)
+	
+	
+details requires a timeframe(now, renew)
 
+	recurly.subscriptions.update(accountcode, details, callback) 
 
 
 refundtype can be 'partial', 'full' or 'none'
